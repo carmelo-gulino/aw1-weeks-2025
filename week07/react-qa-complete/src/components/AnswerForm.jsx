@@ -7,7 +7,7 @@ function AnswerForm(props) {
   const initialState = {
     text: props.answer?.text,
     email: props.answer?.email,
-    date: props.answer?.date ?? dayjs()
+    date: props.answer?.date ?? dayjs()   //if (props.answers) { if(props.answers.date) {return props.answers.date} else dayjs(); else undefined}
   };
   
   const handleSubmit = async (prevState, formData) => {
